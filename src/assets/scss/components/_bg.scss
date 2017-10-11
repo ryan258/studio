@@ -1,0 +1,18 @@
+// colors
+$primary-color: #000;
+$primary-color--inverted: #fff;
+$secondary-color: red;
+$secondary-color--inverted: blue;
+
+
+.bg {
+    &--primary {
+        background-color: $primary-color;
+        color: $primary-color--inverted;
+    }
+    &--secondary {
+        background-color: $secondary-color;
+        color: $primary-color--inverted;
+    }
+}
+
