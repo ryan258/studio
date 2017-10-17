@@ -1,0 +1,45 @@
+<!-- Step 1: Create Orbit w/ accessibility. -->
+<div class="orbit" role="region" aria-label="Orbit Component" data-orbit>
+    <!-- Step 2: Create Orbit Wrapper w/ accessibility. -->
+    <div class="orbit-wrapper">
+        <!-- Step 6: Create Arrows -->
+        <div class="orbit-controls">
+            <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+            <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+        </div>
+        <!-- <h2></h2> -->
+        <!-- Step 5: Add .orbit-container to <ul> -->
+        <ul class="orbit-container">
+                <!-- Step 5: Add .orbit-slide to each <li> -->
+                <!-- Step 6: Add .is-active to the starting slide -->
+            <li class="orbit-slide is-active">
+                <!-- Step 3: Declare Orbit Images w/ .orbit-image -->
+                <img src="http://placehold.it/1400x600" alt="Orbit Slide 1." class="orbit-image"></li>
+                <!-- Step 5: Add .orbit-slide to each <li> -->
+                <li class="orbit-slide">
+                <figure class="orbit-figure">
+                <img src="http://placehold.it/1400x600" alt="Orbit Slide 2." class="orbit-image">
+                <!-- Step 4: Add .orbit-caption to figcaptions -->
+                <figcaption class="orbit-caption">Caption test!</figcaption>
+                </figure>
+            </li>
+                <!-- Step 5: Add .orbit-slide to each <li> -->
+            <li class="orbit-slide">
+                <figure class="orbit-figure">
+                <img src="http://placehold.it/1400x600" alt="Orbit Slide 3." class="orbit-image">
+                <!-- Step 4: Add .orbit-caption to figcaptions -->
+                <figcaption class="orbit-caption">Woot!</figcaption>
+                </figure>
+            </li>
+            <!-- <li class="orbit-slide"><img src="images/cake/cake4.jpg" alt="Wedding cake sample 4." class="orbit-image"></li> -->
+        </ul>
+    </div>
+    <!-- Step 7: Add nav bullets -->
+    <nav class="orbit-bullets">
+        <!-- JS will move the current slide -->
+        <button class="is-active" data-slide="0"><span class="show-for-sr">SR Text</span><span class="show-for-sr">Current Slide</span></button>
+        <button data-slide="1"><span class="show-for-sr">SR Text.</span></button>
+        <button data-slide="2"><span class="show-for-sr">Sr last text</span></button>
+        <!-- <button data-slide="3"><span class="show-for-sr">Simple white cake with several kinds of flowers.</span></button> -->
+    </nav>
+</div>

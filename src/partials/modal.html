@@ -1,0 +1,28 @@
+<!-- Step 1: Paste contents -->
+<article>
+    <img src="images/audrey.jpg" alt="Audrey, baker and owner." class="float-right">
+    <blockquote>
+        <p>Designing cakes for my clients is my passion. Whether it’s a traditional wedding cake or another celebration, I’m excited to help you create the cake of your dreams!</p>
+        <cite>Audrey</cite>
+    </blockquote>
+    <!-- Step 2: Create and Add Button + Classes (modal requires a button to work) -->
+    <!-- Step 3: Bind the JS by using data-open="" -->
+    <p><button class="button hollow warning" data-open="subscribe">Subscribe to my newsletter</button></p>
+</article>
+
+<!-- modal window for subscribe button - place this HTML anywhere -->
+<!-- Step 4: The Contents you can have anywhere (typically above the body's script tag) -->
+<div class="reveal" id="subscribe" data-reveal>
+    <h3>Subscribe to my newsletter</h3>
+    <p>Get amazing recipes, beautiful cake photos, and more sent to your inbox each week!</p>
+    <form>
+        <label>Email address:
+        <input type="email">
+        </label>
+        <button class="button hollow primary">Subscribe!</button>
+    </form>
+    <!-- Step 5: Add a close button -->
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
