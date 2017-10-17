@@ -1,46 +1,63 @@
 <!-- grid-container adds max-width and centers screen content -->
 <!-- grid-container adds padding to the container -->
-<div class="grid-container grid-container-padded">
-  <!-- Try out orbit -->
-  <!-- grid-margin-x puts margin between the cells -->
-  <!-- can collapse it at different screen sizes i.e. large-margin-collapse -->
-  <div class="grid-x grid-margin-x">
-    {{> tool-tip}}
-    {{> modal}}
-    {{> orbit}}
-    {{> tabs--home}}
+<div class="callout">
+  <div class="grid-container grid-container-padded">
+    <!-- Try out orbit -->
+    <!-- grid-margin-x puts margin between the cells -->
+    <!-- can collapse it at different screen sizes i.e. large-margin-collapse -->
+    <div class="grid-x grid-margin-x">
+      {{!-- tool-tip --}} {{!-- modal --}}
+      <p class="cell lead">We're a St. Paul team of creatives who are cultivating an artist space where othere creates can come in, make something,
+        or participate in trainings to actuallty learn some legit shit.</p>
+      <!-- <p class="cell">Flank pancetta ham ground round beef ribs. Hamburger pork chop short loin t-bone andouille flank jerky corned beef
+        turkey biltong alcatra cow cupim ham hock. Strip steak shankle drumstick, ribeye chuck shank spare ribs biltong swine
+        burgdoggen pastrami. Andouille ribeye venison, tongue chicken hamburger sausage.</p>
+      <p class="cell">Bresaola porchetta ham hock tenderloin. Pastrami kielbasa spare ribs cow pork belly, tail meatball jerky leberkas ribeye.
+        Beef ribs filet mignon meatloaf, ham hock pork belly alcatra doner swine. Kevin shank pig pancetta salami boudin
+        meatloaf chuck. Prosciutto kielbasa salami shoulder, flank strip steak bacon.</p>
+      <p class="cell">Alcatra t-bone salami boudin. Pork belly tenderloin ribeye pancetta fatback tri-tip. Shankle alcatra ribeye, jowl fatback
+        ham hock beef ribs spare ribs brisket ham meatloaf ground round porchetta venison. Prosciutto spare ribs pork belly
+        kevin. Pork cow shoulder shank sirloin porchetta biltong, tail t-bone ground round beef boudin bacon pastrami. Venison
+        kielbasa pork chop, cow strip steak tri-tip shank leberkas jerky tenderloin t-bone capicola. Filet mignon tri-tip
+        tenderloin, porchetta prosciutto bacon pastrami frankfurter ribeye salami.</p>
+      <p class="cell">Jowl leberkas drumstick, pork loin landjaeger turkey shank fatback sausage frankfurter burgdoggen salami chicken t-bone
+        corned beef. Tri-tip pork loin meatloaf boudin, filet mignon landjaeger ham hock shank turducken pork belly doner.
+        Tenderloin ball tip capicola meatball rump hamburger cow. Landjaeger cupim frankfurter pork chop bacon.</p> -->
+    </div>
+    {{> orbit}} {{> tabs--home}}
     <section class="small-12 cell home--links">
       {{> grid--block}}
     </section>
     <!-- reorder the content for larger screen size i.e. large-order-{#} -->
     <section class="small-7 cell large-order-0 home--contact">
-      <h1>CONTACT US FOR<br />
-        MORE INFORMATION<br />
-        START YOUR NEXT PROJECT</h1>
-      <ul class="no-bullet">
-        <!-- w/ button you can add tiny small and large -->
-        <!-- expanded expands button out to its container -->
-        <li><a class="button tiny" href="#">Start a Project</a></li>
-        <li><a class="button small expanded" href="#">Learn With Us</a></li>
-        <li><a class="button large" href="#">Learn More</a></li>
-      </ul>
+      <h2>CONTACT US
+        <br /> FOR MORE INFORMATION
+        <br /> START YOUR NEXT PROJECT</h2>
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+          <!-- w/ button you can add tiny small and large -->
+          <!-- expanded expands button out to its container -->
+          <div class="cell medium-4">
+            <a class="button expanded" href="#">Start a Project</a>
+          </div>
+          <div class="cell medium-4">
+            <a class="button expanded" href="#">Learn With Us</a>
+          </div>
+          <div class="cell medium-4">
+            <a class="button expanded" href="#">Learn More</a>
+          </div>
+        </div>
+      </div>>
     </section>
     <!-- auto takes up the rest of the space -->
     <section class="small-5 cell home--contact">
-      {{> callout}}
-      {{> card--event}}
-      {{> form--contact}}
+      <div>{{> callout}}</div>
+      <div>{{> card--event}}</div>
+      <div>{{> form--contact}}</div>
     </section>
     <section class="small-12 cell">
-        <h2>1.651.246.9234</h2>
+      <h2>1.651.246.9234</h2>
     </section>
-    <section class="small-12 cell">
-      <div>© 2018 Studia Musique Artist Labs 501c3</div>
-      <ul class="no-bullet">
-        <li><a href="https://www.facebook.com/StudiaMusique/" target="_blank">#</a></li>
-        <li><a href="http://www.twitter.com/wix" target="_blank">#</a></li>
-        <li><a href="https://www.youtube.com/channel/UCCUFlzDLGm_4XeMgWK7cSGQ" target="_blank">#</a></li>
-      </ul>
-    </section>
+
   </div>
 </div>
