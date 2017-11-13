@@ -65,17 +65,21 @@
 // 1. Global
 // ---------
 
+$primary: #1779ba;
+$secondary: #767676;
+
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #1779ba,
-  secondary: #767676,
+  primary: $primary,
+  secondary: $secondary,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
 );
 $light-gray: #e6e6e6;
+$medium-light-gray: #e9e9e9;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;

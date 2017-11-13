@@ -1,0 +1,31 @@
+<button class="button" data-open="revealAjax">Click me for an AJAX modal!</button>
+
+<div class="reveal" id="revealAjax" data-reveal>
+  <h1>Loading content...</h1>
+</div>
+
+<script>
+  $('#revealAjax').on('open.zf.reveal', function() {
+    $.ajax('/url')
+      .done(function(resp) {
+        $('#revealAjax').html(resp.html);
+        $('#revealAjax').trigger('resizeme.zf.reveal');
+      });
+  });
+</script>
+
+{{!-- this approach doesn't show anything until the content is loaded --}}
+{{!-- <button class="button" id="trigger-reveal">Click me for an AJAX modal!</button>
+
+<div class="reveal" id="reveal1ajax" data-reveal>
+  <h1>Loading content...</h1>
+</div>
+
+<script>
+  $('#trigger-reveal').on("click", function() {
+    $.ajax('/url')
+      .done(function(resp) {
+        $('#reveal1ajax').html(resp.html).foundation('open');
+      });
+  });
+</script> --}}

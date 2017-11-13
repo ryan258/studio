@@ -1,0 +1,12 @@
+<button id="hide-button" data-toggle="one-w-js">Hide one w/ JS!</button>
+
+<p id="one-w-js" data-toggler=".is-hidden">One (w/ JS)</p>
+
+<script>
+  $('#one-w-js').on('on.zf.toggler', function() {
+    $('#hide-button').text('Show One w/ JS!');
+  });
+  $('#one-w-js'.on('off.zf.toggler'), function() {
+    $('#hide-button').text('Hide One w/ JS!');
+  });
+</script>

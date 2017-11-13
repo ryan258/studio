@@ -1,0 +1,14 @@
+<div class="reveal" id="proramatic-open" data-reveal>
+  <h1>Javascript triggered modal content here!</h1>
+  <a href="#" id="programatic-close">Click me to close</a>
+</div>
+
+<script>
+  $(document).ready(function() {
+    $('#programatic-open').foundation('open');
+  });
+  $('#programatic-close').click(function(e) {
+    e.preventDefault();
+    $('#programatic-open').foundation('close');
+  });
+</script>

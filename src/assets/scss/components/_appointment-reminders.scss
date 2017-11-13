@@ -1,0 +1,34 @@
+.reminder {
+  &-section {
+    border: 1px solid $medium-gray;
+    display: flex;
+    
+  }
+  &-card {
+    display: flex;
+    flex: 1 0 0px;
+    padding: 1.5rem;
+    align-items: center;
+    background: $light-gray;
+
+    &:first-child {
+      background: $white;
+      flex: 1 0 28%;
+      min-width: 28%; // for IE
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    &-image {
+      height: rem-calc(65);
+      width: rem-calc(65);
+      border-radius: 50%;
+      margin-right: 1rem;
+    }
+    &-content {
+
+    }
+  }
+}
