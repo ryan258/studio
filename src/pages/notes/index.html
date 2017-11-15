@@ -1,0 +1,227 @@
+<div class="grid-x grid-padding-x">
+  <div class="cell medium-4">
+    <h1>Basic Template</h1>
+    <ul>
+      <li>Most Basic</li>
+      <li>Includes a gulp workflow w/ a Sass compiler.</li>
+      <li>Fast to install and initialize.</li>
+    </ul>
+  </div>
+  <div class="cell medium-8">
+    <h1>Zurb Template</h1>
+    <ul>
+      <li>Includes handlebar templates, Sass/JS compilers(minification)</li>
+      <li>a more advanced Gulp workflow w/ a lot of tasks (image compression and moving files.)</li>
+      <li>BrowserSync - test your site w/o uploading to a web server</li>
+      <li>Panini - include partials and re-use components in HTML.</li>
+      <li>Handlebars to read YML and JSON data.</li>
+    </ul>
+    <h2>The File Structure</h2>
+    <ul>
+      <li>CHANGELOG.md</li>
+      <li>config.yml</li>
+      <li>/etc/</li>
+      <li>gulpfile.babel.js</li>
+      <li>/node_modules/</li>
+      <li>package.json</li>
+      <li>readme.md</li>
+      <li>/src/
+        <ul>
+          <li>/assets/
+            <p>where you can add other stylesheets, images, javascript files, and more.</p>
+          </li>
+          <li>/data/
+            <p>here you can add .yml files and .json files w/ some data.</p>
+          </li>
+          <li>/layouts/
+            <p>Similar to a Master Page, contains just 1 file, here you will include the header, footr, and other sections that
+              should appear on all pages (links to stylesheets and javascript files too)</p>
+          </li>
+          <li>/pages/
+            <p>one file for each page in the website
+              <br> (exp) - about.html, gallery.html, clients.html</p>
+          </li>
+          <li>/partials/
+            <p>HTML code that you want to use on different pages (but not all pages), think widgets.</p>
+          </li>
+          <li>/styleguide/</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="cell medium-4">
+    <h1>Layout</h1>
+    <p class="lead">Use 1 grid per project.</p>
+    <h2>XY Grid</h2>
+    <code>
+      &lt;div class="grid-x"&gt;
+        &lt;div class="small-6 cell"&gt;&lt;/div&gt;
+        &lt;div class="small-6 cell"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    </code>
+    <h3>Grid Frame</h3>
+    <p>.grid-y.grid-frame</p>
+    <p>inside</p>
+    <ul>
+      <li>.header.shrink.cell</li>
+      <li>.body.auto.cell</li>
+      <li>.footer,shrink.cell</li>
+    </ul>
+    <h2>Flex Grid (Legacy)</h2>
+    <h2>Float Grid (Legacy)</h2>
+    <code>
+      &lt;div class="row"&gt;
+        &lt;div class="small-6 columns"&gt;&lt;/div&gt;
+        &lt;div class="small-6 columns"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    </code>
+
+  </div>
+  <div class="cell medium-4">
+    <h1>Components</h1>
+    <p>On .grid-x you can use </p>
+    <ul>
+      <li>.grid-margin-x</li>
+      <li>.grid-margin-y</li>
+      <li>.grid-padding-x</li>
+      <li>.grid-padding-y</li>
+    </ul>
+  </div>
+  <div class="cell medium-4">
+    <h1>Utilities</h1>
+    <h4>Commenting</h4>
+    <code>
+      {{!--content--}}
+    </code>
+    <h4>Including Partials</h4>
+    <code>
+      {{!-- {{> partial}} --}}
+    </code>
+  </div>
+</div>
+
+
+
+<hr>
+
+
+
+
+
+
+<div class="grid-container">
+  <div class="grid-x grid-margin-x">
+    <div class="notes">
+      <p>Remove the Foundation Gem</p>
+      <code>$ gem uninstall foundation</code>
+      <p>Run watch again to hopefully bring it back updated</p>
+      <code>$ foundation watch</code>
+      <h1>Semantics</h1>
+      <p>@includes...</p>
+      <h1>Alignment</h1>
+      <h2>From the parent</h2>
+      <ul>
+        <li>.align-right</li>
+        <li>.align-justify</li>
+        <li>.align-center</li>
+        <li>.align-spacedd</li>
+        <li>.align-top</li>
+        <li>.align-bottom</li>
+        <li>.align-middle</li>
+        <li>.align-stretch</li>
+      </ul>
+      <h2>On the child</h2>
+      <p>On the .cell</p>
+      <ul>
+        <li>.align-self-top</li>
+        <li>.align-self-middle</li>
+        <li>.align-self-bottom</li>
+        <li>.align-self-stretch (default)</li>
+      </ul>
+      <h1>Sass Mixins</h1>
+      <ul>
+        <li>If you find yourself writing the same CSS over and over, or you have a complex piece of CSS you want to reuse, then
+          MIXINS is where it's at!</li>
+        <li>A mixin let's you make groups of CSS declarations that you want to resuse throughout your site</li>
+        <li>You can even pass values, similar to functions in programming
+          < to make smarter mixins.</li>
+      </ul>
+      <h2>How to use</h2>
+      <p>@include my_font() {font-family: 'Helvetic', sans-serif}</p>
+      <p>Then you use it: p { @include my_font(); }</p>
+      <p>You can also pass parameters to mixins.</p>
+      <p>@include message($color) { border: 1px solid $color };</p>
+      <p>Use it: .error { @include message(red); }</p>
+      <ul>
+        <li>You don't have to create all the mixins, Foundation already provides a whole set of them.</li>
+        <li>Mixins for media queries, display property, margin, and padding are included.</li>
+        <li>If one doesn't exist you can create your own!</li>
+      </ul>
+      <h2>Rem-Calc</h2>
+      <ul>
+        <li>Foundation uses Rems as the measurement unit for Font Sizes, Margins, Paddings</li>
+        <li>How to work w/ them:
+          <ul>
+            <li>rem is relative to the HTML document and is a division between your base font size (that you set on the HTML
+              tag in your stylesheet) and your desired size.</li>
+            <li>p { font-size:
+              <strong>rem-calc(20)</strong>; } makes p { font-size:
+              <strong>1.125rem</strong>; }</li>
+            <li>Foundation made the
+              <strong>rem-calc</strong> function to make life easier for us.</li>
+            <li>Shorthand Margin or Padding</li>
+            <li>margin: rem-calc(20, 30);</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="grid-x grid-padding-x">
+  <div class="cell">
+    <h1>Project 1 - Coffee Shop</h1>
+    <h2>Approach</h2>
+    <p>always try to trace things back up to _settings.scss</p>
+    <p>update primary colors</p>
+    <div class="ul">
+      <li>Do the layouts/defaul.html</li>
+      <li>Do the header</li>
+      <li>Then it's a loop of
+        <ol>
+          <li>
+            <strong>Sections</strong>
+          </li>
+          <li>Header</li>
+          <li>Add google fonts cdn link to top of app.scss, under motion-ui
+            <br> (update font-family in _settings.scss)</li>
+          <li>Take on the menu
+            <ul>
+              <li>Adjust the anchor color in _setting.scss</li>
+              <li>make the menu responsive</li>
+              <li>add motion ui to menus</li>
+            </ul>
+          </li>
+        </ol>
+        <ul>
+          <li>HTML a section
+            <ul>
+              <li>Apply Grids</li>
+            </ul>
+          </li>
+          <li>Style a section
+            <ul>
+              <li>normally you want to change things in the settings.scss file.
+                <br>Yes you can create your own variables in the settings.scss</li>
+            </ul>
+          </li>
+          <li>Move on to a new section</li>
+        </ul>
+      </li>
+    </div>
+    <h2>Tips</h2>
+    <ul>
+      <li></li>
+    </ul>
+  </div>
+</div>
