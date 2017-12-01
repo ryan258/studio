@@ -1,0 +1,426 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation for Sites</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+  <!-- Step 5: Add title bar -->
+  <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+      <!-- Step 6: Make toggle button -->
+      <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+      <!-- Step 7: Add Title -->
+      <div class="title-bar-title">Menu</div>
+  </div>
+  <!-- Step 3: Wrapp menu in a .top-bar -->
+  <div class="top-bar">
+      <!-- Step 4: Give top-bar a direction -->
+      <!-- Step 8: add id to connect the toggle to this menu -->
+      <nav class="top-bar-left" id="responsive-menu">
+          <!-- Step 1: Add ,menu -->
+          <!-- Step 10: Add .dropdown and data-dropdown-menu to  -->
+          <!-- Step 11: Update classes to switch to different nav presentations -->
+          <!-- Step 12: Replace data-dropdown-menu with data-responsive-menu -->
+          <ul class="vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">
+              <li class="menu-text">Studio</a></li>
+              <!-- Step 2: Add .is-active -->
+              <li><a class="is-active" href="about">About</a></li>
+              <li class="has-submenu">
+                  <a href="services">Services</a>
+                  <!-- Step 9: Put <ul> submenu in side the <li> to bind this w/ JS-->
+                  <!-- Step 13: Add .vertical (an .nested) -->
+                  <ul class="submenu menu vertical nested" data-submenu>
+                      <li><a href="services/photography">Photography</a></li>
+                      <li><a href="services/recording">Recording</a></li>
+                      <li><a href="services/videography">Videography</a></li>
+                      <li><a href="services/events">Event Services</a></li>
+                      <li><a href="services/career">Artistic Development</a></li>
+                  </ul>
+              </li>
+              <li></li>
+              <li><a href="contact">Contact</a></li>
+          </ul>
+      </nav>
+  </div>
+  <!-- <div class="top-bar">
+      <div class="top-bar-left">
+          <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text">Studio</a></li>
+          <li><a href="about">About</a></li>
+          <li class="has-submenu">
+          <a href="services">Services</a>
+              <ul class="submenu menu vertical" data-submenu>
+              <li><a href="services/photography">Photography</a></li>
+              <li><a href="services/recording">Recording</a></li>
+              <li><a href="services/videography">Videography</a></li>
+              <li><a href="services/events">Event Services</a></li>
+              <li><a href="services/career">Artistic Development</a></li>
+              </ul>
+          </li>
+          <li></li>
+          <li><a href="contact">Contact</a></li>
+          </ul>
+      </div>
+      <div class="top-bar-right">
+          <ul class="menu">
+          <li><input type="search" placeholder="Search"></li>
+          <li><button type="button" class="button">Search</button></li>
+          </ul>
+      </div>
+  </div> -->
+  
+  <!--  
+    -->
+  <div><!-- grid-container adds max-width and centers screen content -->
+<!-- grid-container adds padding to the container -->
+<div class="callout">
+  <div class="grid-container grid-container-padded">
+    <!-- Try out orbit -->
+    <!-- grid-margin-x puts margin between the cells -->
+    <!-- can collapse it at different screen sizes i.e. large-margin-collapse -->
+    <div class="grid-x grid-margin-x">
+       
+      <p class="cell lead">We're a St. Paul team of creatives who are cultivating an artist space where othere creates can come in, make something,
+        or participate in trainings to actuallty learn some legit shit.</p>
+      <!-- <p class="cell">Flank pancetta ham ground round beef ribs. Hamburger pork chop short loin t-bone andouille flank jerky corned beef
+        turkey biltong alcatra cow cupim ham hock. Strip steak shankle drumstick, ribeye chuck shank spare ribs biltong swine
+        burgdoggen pastrami. Andouille ribeye venison, tongue chicken hamburger sausage.</p>
+      <p class="cell">Bresaola porchetta ham hock tenderloin. Pastrami kielbasa spare ribs cow pork belly, tail meatball jerky leberkas ribeye.
+        Beef ribs filet mignon meatloaf, ham hock pork belly alcatra doner swine. Kevin shank pig pancetta salami boudin
+        meatloaf chuck. Prosciutto kielbasa salami shoulder, flank strip steak bacon.</p>
+      <p class="cell">Alcatra t-bone salami boudin. Pork belly tenderloin ribeye pancetta fatback tri-tip. Shankle alcatra ribeye, jowl fatback
+        ham hock beef ribs spare ribs brisket ham meatloaf ground round porchetta venison. Prosciutto spare ribs pork belly
+        kevin. Pork cow shoulder shank sirloin porchetta biltong, tail t-bone ground round beef boudin bacon pastrami. Venison
+        kielbasa pork chop, cow strip steak tri-tip shank leberkas jerky tenderloin t-bone capicola. Filet mignon tri-tip
+        tenderloin, porchetta prosciutto bacon pastrami frankfurter ribeye salami.</p>
+      <p class="cell">Jowl leberkas drumstick, pork loin landjaeger turkey shank fatback sausage frankfurter burgdoggen salami chicken t-bone
+        corned beef. Tri-tip pork loin meatloaf boudin, filet mignon landjaeger ham hock shank turducken pork belly doner.
+        Tenderloin ball tip capicola meatball rump hamburger cow. Landjaeger cupim frankfurter pork chop bacon.</p> -->
+    </div>
+    <div class="grid-container">
+  <div class="grid-x">
+    <div class="cell">
+      <!-- Step 1: Create Orbit w/ accessibility. -->
+      <div class="orbit" role="region" aria-label="Orbit Component" data-orbit>
+        <!-- Step 2: Create Orbit Wrapper w/ accessibility. -->
+        <div class="orbit-wrapper">
+          <!-- Step 6: Create Arrows -->
+          <div class="orbit-controls">
+            <button class="orbit-previous">
+              <span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+            <button class="orbit-next">
+              <span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+          </div>
+          <!-- <h2></h2> -->
+          <!-- Step 5: Add .orbit-container to <ul> -->
+          <ul class="orbit-container">
+            <!-- Step 5: Add .orbit-slide to each <li> -->
+            <!-- Step 6: Add .is-active to the starting slide -->
+            <li class="orbit-slide is-active">
+              <!-- Step 3: Declare Orbit Images w/ .orbit-image -->
+              <img src="http://placehold.it/1400x600" alt="Orbit Slide 1." class="orbit-image">
+            </li>
+            <!-- Step 5: Add .orbit-slide to each <li> -->
+            <li class="orbit-slide">
+              <figure class="orbit-figure">
+                <img src="http://placehold.it/1400x600" alt="Orbit Slide 2." class="orbit-image">
+                <!-- Step 4: Add .orbit-caption to figcaptions -->
+                <figcaption class="orbit-caption">Caption test!</figcaption>
+              </figure>
+            </li>
+            <!-- Step 5: Add .orbit-slide to each <li> -->
+            <li class="orbit-slide">
+              <figure class="orbit-figure">
+                <img src="http://placehold.it/1400x600" alt="Orbit Slide 3." class="orbit-image">
+                <!-- Step 4: Add .orbit-caption to figcaptions -->
+                <figcaption class="orbit-caption">Woot!</figcaption>
+              </figure>
+            </li>
+            <!-- <li class="orbit-slide"><img src="images/cake/cake4.jpg" alt="Wedding cake sample 4." class="orbit-image"></li> -->
+          </ul>
+        </div>
+        <!-- Step 7: Add nav bullets -->
+        <nav class="orbit-bullets">
+          <!-- JS will move the current slide -->
+          <button class="is-active" data-slide="0">
+            <span class="show-for-sr">SR Text</span>
+            <span class="show-for-sr">Current Slide</span>
+          </button>
+          <button data-slide="1">
+            <span class="show-for-sr">SR Text.</span>
+          </button>
+          <button data-slide="2">
+            <span class="show-for-sr">Sr last text</span>
+          </button>
+          <!-- <button data-slide="3"><span class="show-for-sr">Simple white cake with several kinds of flowers.</span></button> -->
+        </nav>
+      </div>
+    </div>
+  </div>
+</div> <div class="grid-x">
+  <section class="small-12 cell">
+    <ul class="tabs" id="tabs--home" data-responsive-accordion-tabs="tabs medium-accordion large-tabs">
+      <li class="tabs-title is-active">
+        <a href="#panel1">LEARN.CREATE.RECORD.</a>
+      </li>
+      <li class="tabs-title">
+        <a href="#panel2">FILM PHOTOGRAPHY MUSIC</a>
+      </li>
+      <li class="tabs-title">
+        <a href="#panel3">TOGETHER MSP</a>
+      </li>
+    </ul>
+    <div class="tabs-content" data-tabs-content="tabs--home">
+      <div class="tabs-panel is-active" id="panel1">
+        <h2 class="text-center">LEARN.CREATE.RECORD.</h2>
+        <p>Flank pancetta ham ground round beef ribs. Hamburger pork chop short loin t-bone andouille flank jerky corned beef
+          turkey biltong alcatra cow cupim ham hock. Strip steak shankle drumstick, ribeye chuck shank spare ribs biltong
+          swine burgdoggen pastrami. Andouille ribeye venison, tongue chicken hamburger sausage.</p>
+      </div>
+      <div class="tabs-panel" id="panel2">
+        <h2 class="text-center">FILM PHOTOGRAPHY MUSIC</h2>
+        <p>Hamburger pork chop short loin t-bone andouille flank jerky corned beef turkey biltong alcatra cow cupim ham hock.
+          Strip steak shankle drumstick, ribeye chuck shank spare ribs biltong swine burgdoggen pastrami. Andouille ribeye
+          venison, tongue chicken hamburger sausage.</p>
+
+      </div>
+      <div class="tabs-panel" id="panel3">
+        <h2 class="text-center">TOGETHER MSP</h2>
+        <p>Chop short loin t-bone andouille flank jerky corned beef turkey biltong alcatra cow cupim ham hock. Strip steak shankle
+          drumstick, ribeye chuck shank spare ribs biltong swine burgdoggen pastrami. Andouille ribeye venison, tongue chicken
+          hamburger sausage.</p>
+
+      </div>
+    </div>
+  </section>
+</div>
+    <section class="small-12 cell home--links">
+      <!--  grid-container-padded -->
+      <div class="grid-container callout">
+        <!-- small-up-# to display 2 side by side for x results -->
+        <div class="grid-x grid-margin-x grid-margin-y small-up-2 medium-up-3 large-up-4">
+          <div class="cell">
+            <img src="http://placehold.it/300x200" alt="">
+          </div>
+          <div class="cell">
+            <img src="http://placehold.it/300x200" alt="">
+          </div>
+          <div class="cell">
+            <img src="http://placehold.it/300x200" alt="">
+          </div>
+          <div class="cell">
+            <img src="http://placehold.it/300x200" alt="">
+          </div>
+          <div class="cell">
+            <img src="http://placehold.it/300x200" alt="">
+          </div>
+          <div class="cell">
+            <img src="http://placehold.it/300x200" alt="">
+          </div>
+          <div class="cell">
+            <img src="http://placehold.it/300x200" alt="">
+          </div>
+        </div>
+      </div>    </section>
+    <!-- reorder the content for larger screen size i.e. large-order-{#} -->
+    <section class="small-7 cell large-order-0 home--contact">
+      <h2>CONTACT US
+        <br /> FOR MORE INFORMATION
+        <br /> START YOUR NEXT PROJECT</h2>
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+          <!-- w/ button you can add tiny small and large -->
+          <!-- expanded expands button out to its container -->
+          <div class="cell medium-4">
+            <a class="button expanded" href="#">Start a Project</a>
+          </div>
+          <div class="cell medium-4">
+            <a class="button expanded" href="#">Learn With Us</a>
+          </div>
+          <div class="cell medium-4">
+            <a class="button expanded" href="#">Learn More</a>
+          </div>
+        </div>
+      </div>>
+    </section>
+    <!-- auto takes up the rest of the space -->
+    <section class="small-5 cell home--contact">
+      <div><div class="grid-container">
+  <div class="grid-x">
+    <div class="cell">
+      <div class="callout secondary large">
+        <p>I'm a callout and the strip steak shankle drumstick, ribeye chuck shank spare ribs biltong swine burgdoggen pastrami.
+          Andouille ribeye venison, tongue chicken hamburger sausage.</p>
+      </div>
+    </div>
+  </div>
+</div></div>
+      <div><div class="grid-container">
+  <div class="grid-x">
+    <div class="cell">
+      <div class="card">
+        <h2 class="card-divider">Upcoming Events</h2>
+        <ul class="no-bullet card-section">
+          <li>
+            <h3>
+              <a href="#">Grand Opening!</a>
+            </h3>
+            <p>
+              Flank pancetta ham ground round beef ribs. Hamburger pork chop short loin t-bone andouille flank jerky corned beef turkey
+              biltong alcatra cow cupim ham hock. Strip steak shankle drumstick, ribeye chuck shank spare ribs biltong swine
+              burgdoggen pastrami. Andouille ribeye venison, tongue chicken hamburger sausage.
+            </p>
+          </li>
+          <li>
+            <h3>
+              <a href="#">Open Mic</a>
+            </h3>
+            <p>
+              Hamburger pork chop short loin t-bone andouille flank jerky corned beef turkey biltong alcatra cow cupim ham hock. Strip
+              steak shankle drumstick, ribeye chuck shank spare ribs biltong swine burgdoggen pastrami. Andouille ribeye
+              venison, tongue chicken hamburger sausage.
+            </p>
+          </li>
+          <li>
+            <h3>
+              <a href="#">Class: Make Your Own Website!</a>
+            </h3>
+            <p>
+              Ham ground round beef ribs. Hamburger pork chop short loin t-bone andouille flank jerky corned beef turkey biltong alcatra
+              cow cupim ham hock. Strip steak shankle drumstick, ribeye chuck shank spare ribs biltong swine burgdoggen pastrami.
+              Andouille ribeye venison, tongue chicken hamburger sausage.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div></div>
+      <div><div class="grid-container">
+  <div class="grid-x">
+    <div class="cell">
+      <h2>CONTACT US HERE :</h2>
+      <p class="lead">Take the first step toward challenging your creative goals today!</p>
+      <div class="home--contact-form">
+        <div>
+          <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Text input" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-danger" type="text" placeholder="Email input" value="hello@" />
+              <span class="icon is-small is-left">
+                <i class="fa fa-envelope"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fa fa-warning"></i>
+              </span>
+            </div>
+            <p class="help is-danger">This email is invalid</p>
+          </div>
+
+          <div class="field">
+            <label class="label">Subject</label>
+            <div class="control">
+              <div class="select">
+                <select>
+                  <option>Select dropdown</option>
+                  <option>With options</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- {/* <div class="field">
+      <label class="label">Username</label>
+      <div class="control has-icons-left has-icons-right">
+        <input class="input is-success" type="text" placeholder="Text input" value="bulma" />
+        <span class="icon is-small is-left">
+          <i class="fa fa-user"></i>
+        </span>
+        <span class="icon is-small is-right">
+          <i class="fa fa-check"></i>
+        </span>
+      </div>
+      <p class="help is-success">This username is available</p>
+    </div> */} -->
+
+          <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Textarea"></textarea>
+            </div>
+          </div>
+
+          <div class="field is-grouped">
+            <div class="grid-x grid-margin-x">
+              <div class="cell small-6 control">
+                <button class="button expanded is-primary hollow">Submit</button>
+              </div>
+              <div class="cell small-6 control">
+                <button class="button expanded is-link alert">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></div>
+    </section>
+    <section class="small-12 cell">
+      <h2>1.651.246.9234</h2>
+    </section>
+
+  </div>
+</div>
+</div>
+  <footer><footer>
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="cell large-3">
+        <p>BTHosting &copy; copyright 2017</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
+      </div>
+      <div class="cell large-3">
+        <h5>Company</h5>
+        <ul class="menu vertical">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Site Map</a></li>
+        </ul>
+      </div>
+      <div class="cell large-3">
+        <h5>Support</h5>
+        <ul class="menu vertical">
+          <li><a href="#">Knowledgebase</a></li>
+          <li><a href="#">Support Forum</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Ticket System</a></li>
+        </ul>
+      </div>
+      <div class="cell large-3">
+        <img src="http://placehold.it/150">
+      </div>
+    </div>
+  </div>
+</footer></footer>
+</body>
+
+<script src="assets/js/app.js"></script>
+</body>
+
+</html>
