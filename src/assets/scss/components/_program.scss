@@ -1,0 +1,32 @@
+#program-header {
+  background-image: url("http://fillmurray.com/1600/800");
+  background-size: cover;
+  min-height: 40vh;
+  // margin-bottom: 1rem;
+
+  .cell {
+    transform: translateY(60%);
+  }
+
+  h1 {
+    border-bottom: 2px solid orange;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .lead {
+    font-weight: bold;
+    color: #fff;
+  }
+}
+
+.main-content {
+  background: #522828;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.news-details {
+  border-left: 2px solid orange;
+  padding: 0.5rem 0.5rem 0;
+}

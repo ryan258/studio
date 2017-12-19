@@ -1,5 +1,43 @@
 <!-- grid-container adds max-width and centers screen content -->
 <!-- grid-container adds padding to the container -->
+{{> orbit}}
+<div class="callout">
+  <p class="lead text-center">Helping students build contemporary careers in music for over 30 years.</p>
+</div>
+<div class="grid-container">
+  <div class="grid-x grid-margin-x">
+    <div class="cell large-6">
+      <div class="grid-x grid-margin-x">
+        <div class="cell medium-4">
+          <img src="http://fillmurray.com/300/300" />
+        </div>
+        <div class="cell medium-8">
+          <h2>Develop Your Talent.</h2>
+          <p>Our unique curriculum is designed to prepare students through a combined emphasis on artistry, technology and entrepreneurship
+            — the necessary foundation to make a life in music.
+            <a href="#">Learn more »</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="cell large-6">
+      <div class="grid-x grid-margin-x">
+        <div class="cell medium-4">
+          <img src="http://fillmurray.com/300/300" />
+        </div>
+        <div class="cell medium-8">
+          <h2>Discover Your Career.</h2>
+          <p>We believe in supporting our students in every way possible. That’s why we provide robust services that go well
+            beyond the classroom — even beyond graduation.
+            <a href="#">Learn more »</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <div class="callout">
   <div class="grid-container grid-container-padded">
     <!-- Try out orbit -->
@@ -7,8 +45,8 @@
     <!-- can collapse it at different screen sizes i.e. large-margin-collapse -->
     <div class="grid-x grid-margin-x">
       {{!-- tool-tip --}} {{!-- modal --}}
-      <p class="cell lead">We're a St. Paul team of creatives who are cultivating an artist space where othere creates can come in, make something,
-        or participate in trainings to actuallty learn some legit shit.</p>
+      <!-- <p class="cell lead">We're a St. Paul team of creatives who are cultivating an artist space where othere creates can come in, make something,
+        or participate in trainings to actuallty learn some legit shit.</p> -->
       <!-- <p class="cell">Flank pancetta ham ground round beef ribs. Hamburger pork chop short loin t-bone andouille flank jerky corned beef
         turkey biltong alcatra cow cupim ham hock. Strip steak shankle drumstick, ribeye chuck shank spare ribs biltong swine
         burgdoggen pastrami. Andouille ribeye venison, tongue chicken hamburger sausage.</p>
@@ -24,7 +62,7 @@
         corned beef. Tri-tip pork loin meatloaf boudin, filet mignon landjaeger ham hock shank turducken pork belly doner.
         Tenderloin ball tip capicola meatball rump hamburger cow. Landjaeger cupim frankfurter pork chop bacon.</p> -->
     </div>
-    {{> orbit}} {{> tabs--home}}
+    {{> tabs--home}}
     <section class="small-12 cell home--links">
       {{> grid--block}}
     </section>
