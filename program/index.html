@@ -1,0 +1,570 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation for Sites</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/app.css">
+</head>
+
+<body>
+  <!-- Step 5: Add title bar -->
+  <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+      <!-- Step 6: Make toggle button -->
+      <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+      <!-- Step 7: Add Title -->
+      <div class="title-bar-title">Menu</div>
+  </div>
+  <!-- Step 3: Wrapp menu in a .top-bar -->
+  <div class="top-bar">
+      <!-- Step 4: Give top-bar a direction -->
+      <!-- Step 8: add id to connect the toggle to this menu -->
+      <nav class="top-bar-left" id="responsive-menu">
+          <!-- Step 1: Add ,menu -->
+          <!-- Step 10: Add .dropdown and data-dropdown-menu to  -->
+          <!-- Step 11: Update classes to switch to different nav presentations -->
+          <!-- Step 12: Replace data-dropdown-menu with data-responsive-menu -->
+          <ul class="vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">
+              <li class="menu-text">Studio</a></li>
+              <!-- Step 2: Add .is-active -->
+              <li><a class="is-active" href="../about">About</a></li>
+              <li class="has-submenu">
+                  <a href="../services">Services</a>
+                  <!-- Step 9: Put <ul> submenu in side the <li> to bind this w/ JS-->
+                  <!-- Step 13: Add .vertical (an .nested) -->
+                  <ul class="submenu menu vertical nested" data-submenu>
+                      <li><a href="../services/photography">Photography</a></li>
+                      <li><a href="../services/recording">Recording</a></li>
+                      <li><a href="../services/videography">Videography</a></li>
+                      <li><a href="../services/events">Event Services</a></li>
+                      <li><a href="../services/career">Artistic Development</a></li>
+                  </ul>
+              </li>
+              <li></li>
+              <li><a href="../contact">Contact</a></li>
+          </ul>
+      </nav>
+  </div>
+  <!-- <div class="top-bar">
+      <div class="top-bar-left">
+          <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text">Studio</a></li>
+          <li><a href="../about">About</a></li>
+          <li class="has-submenu">
+          <a href="../services">Services</a>
+              <ul class="submenu menu vertical" data-submenu>
+              <li><a href="../services/photography">Photography</a></li>
+              <li><a href="../services/recording">Recording</a></li>
+              <li><a href="../services/videography">Videography</a></li>
+              <li><a href="../services/events">Event Services</a></li>
+              <li><a href="../services/career">Artistic Development</a></li>
+              </ul>
+          </li>
+          <li></li>
+          <li><a href="../contact">Contact</a></li>
+          </ul>
+      </div>
+      <div class="top-bar-right">
+          <ul class="menu">
+          <li><input type="search" placeholder="Search"></li>
+          <li><button type="button" class="button">Search</button></li>
+          </ul>
+      </div>
+  </div> -->
+  
+  <!--  
+    -->
+  <div><header id="program-header">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x align-middle">
+      <div class="cell medium-12 align-self-middle">
+        <h1>Discover Your Life in Music</h1>
+        <p class="lead">Earn Your Degree in Music Production
+          <br>2 and 4 year programs available</p>
+        <p>
+          <a href="#" class="button alert">Apply</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="grid-container main-content">
+  <div class="grid-x grid-padding-x">
+    <section class="medium-4">
+      <div class="callout">
+        <h4>GET STARTED</h4>
+
+        <h5>APPLY</h5>
+        <p>Begin your online application</p>
+        <h5>REQUEST INFO</h5>
+        <p>Learn more about your degree options, financial aid and the admissions process</p>
+        <h5>VISIT CAMPUS</h5>
+        <p>The best way to experience McNally Smith is to visit in person</p>
+      </div>
+      <div class="callout">
+        <h4>DEGREES:</h4>
+        <ul>
+          <li>
+            <a href="#">Bachelor of Science in Music (Music Producer)</a>
+          </li>
+          <li>
+            <a href="#">Associate of Applied Science in Music (Production)</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="small-12 medium-8 cell">
+      <ul class="tabs" id="tabs--home" data-responsive-accordion-tabs="tabs medium-accordion large-tabs">
+        <li class="tabs-title is-active">
+          <a href="#panel1">Overview</a>
+        </li>
+        <li class="tabs-title">
+          <a href="#panel2">Campus Culture</a>
+        </li>
+        <li class="tabs-title">
+          <a href="#panel3">Faculty</a>
+        </li>
+        <li class="tabs-title">
+          <a href="#panel4">Key Courses</a>
+        </li>
+        <li class="tabs-title">
+          <a href="#panel5">Tuition & Aid</a>
+        </li>
+      </ul>
+      <div class="tabs-content" data-tabs-content="tabs--home">
+        <div class="tabs-panel is-active" id="panel1">
+          <p>Our Music Production classes provide individualized instruction and are designed to give you a solid foundation
+            of audio engineering skills and an opportunity to develop your unique sound as a music producer. Whether you
+            earn a two-year Associate or a four-year Bachelor of Music Production, you’ll learn to master the art of recording
+            and gain essential skills in microphone placement, mixing, mastering, post-production (radio, film and TV), electrical
+            engineering, and studio design.</p>
+          <p>You’ll be ready for success in a variety of career paths with a strong background in analog and digital recording
+            technology combined with core skills in songwriting, music theory, and arrangement.</p>
+
+          <h2>Ready For The Real World</h2>
+
+          <p>As a Music Production major, you’ll receive a hands-on education that prepares you for the real world. You’ll get
+            to run recording sessions and sharpen your skills by working in state-of-the-art facilities. You’ll hone your
+            craft by collaborating with Songwriting, Composition, Business, and Performance majors on real projects. You’ll
+            discover how to capture great tones in the studio for every instrument. During your time in the program, you’ll
+            create a portfolio of work that showcases your talent and highlights your technical and creative abilities. This
+            audio resume will help sell your work to future clients.</p>
+
+          <p>Going to college for music production helps you get a head start on your music career by building your professional
+            network while still in school. And with access to guest artists and internships, you’re connected to the industry
+            before you even graduate.</p>
+
+          <h2>Teaching For Tomorrow ℠</h2>
+
+          <p>To thrive as an audio professional, you need a well-rounded education that prepares you for the dynamic future
+            of music and media. That’s why our Music Production degree program focuses on developing your creativity and
+            musicianship while giving you the necessary technology skills to compete in the industry. You’ll also graduate
+            equipped with the entrepreneurial concepts and business strategies you’ll need to reach your goals and establish
+            your career.</p>
+
+          <p>If you’re looking for a music production school, our comprehensive program readies you to make and sustain a life
+            in music by blending artistry, technology and entrepreneurship.</p>
+
+          <h2>Your Career Path</h2>
+
+          <p>Graduates of the Music Production program are prepared for a variety of career options, including:</p>
+          <ul>
+            <li>Music Producer</li>
+            <li>Recording Engineer</li>
+            <li>Acoustician/Studio Designer</li>
+            <li>Mastering Engineer</li>
+            <li>Sound Designer (animation, film, video games, commercials)</li>
+            <li>Broadcast Engineer</li>
+            <li>App Developer</li>
+          </ul>
+          <p>To pursue your career goals and go to college for music production, request more information today.</p>
+        </div>
+        <div class="tabs-panel" id="panel2">
+          <h2 class="text-center">Campus Culture</h2>
+          <div class="callout">
+            <h3>STUDIOS & FACILITIES</h3>
+            <div class="">
+              <div class="grid-x">
+                <div class="cell">
+                  <!-- Step 1: Create Orbit w/ accessibility. -->
+                  <div class="orbit" role="region" aria-label="Orbit Component" data-orbit>
+                    <!-- Step 2: Create Orbit Wrapper w/ accessibility. -->
+                    <div class="orbit-wrapper">
+                      <!-- Step 6: Create Arrows -->
+                      <div class="orbit-controls">
+                        <button class="orbit-previous">
+                          <span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                        <button class="orbit-next">
+                          <span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                      </div>
+                      <!-- <h2></h2> -->
+                      <!-- Step 5: Add .orbit-container to <ul> -->
+                      <ul class="orbit-container">
+                        <!-- Step 5: Add .orbit-slide to each <li> -->
+                        <!-- Step 6: Add .is-active to the starting slide -->
+                        <li class="orbit-slide is-active">
+                          <!-- Step 3: Declare Orbit Images w/ .orbit-image -->
+                          <img src="http://placehold.it/1400x600" alt="Orbit Slide 1." class="orbit-image">
+                        </li>
+                        <!-- Step 5: Add .orbit-slide to each <li> -->
+                        <li class="orbit-slide">
+                          <figure class="orbit-figure">
+                            <img src="http://placehold.it/1400x600" alt="Orbit Slide 2." class="orbit-image">
+                            <!-- Step 4: Add .orbit-caption to figcaptions -->
+                            <figcaption class="orbit-caption">Caption test!</figcaption>
+                          </figure>
+                        </li>
+                        <!-- Step 5: Add .orbit-slide to each <li> -->
+                        <li class="orbit-slide">
+                          <figure class="orbit-figure">
+                            <img src="http://placehold.it/1400x600" alt="Orbit Slide 3." class="orbit-image">
+                            <!-- Step 4: Add .orbit-caption to figcaptions -->
+                            <figcaption class="orbit-caption">Woot!</figcaption>
+                          </figure>
+                        </li>
+                        <!-- <li class="orbit-slide"><img src="images/cake/cake4.jpg" alt="Wedding cake sample 4." class="orbit-image"></li> -->
+                      </ul>
+                    </div>
+                    <!-- Step 7: Add nav bullets -->
+                    <nav class="orbit-bullets">
+                      <!-- JS will move the current slide -->
+                      <button class="is-active" data-slide="0">
+                        <span class="show-for-sr">SR Text</span>
+                        <span class="show-for-sr">Current Slide</span>
+                      </button>
+                      <button data-slide="1">
+                        <span class="show-for-sr">SR Text.</span>
+                      </button>
+                      <button data-slide="2">
+                        <span class="show-for-sr">Sr last text</span>
+                      </button>
+                      <!-- <button data-slide="3"><span class="show-for-sr">Simple white cake with several kinds of flowers.</span></button> -->
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>            <p>Our campus features 3 performance venues, 6 technology labs, and 11 recording studios where students learn to
+              record, edit and mix music and audio.</p>
+          </div>
+          <div class="callout">
+            <h3>STUDENT LIFE</h3>
+            <div class="">
+              <div class="grid-x">
+                <div class="cell">
+                  <!-- Step 1: Create Orbit w/ accessibility. -->
+                  <div class="orbit" role="region" aria-label="Orbit Component" data-orbit>
+                    <!-- Step 2: Create Orbit Wrapper w/ accessibility. -->
+                    <div class="orbit-wrapper">
+                      <!-- Step 6: Create Arrows -->
+                      <div class="orbit-controls">
+                        <button class="orbit-previous">
+                          <span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                        <button class="orbit-next">
+                          <span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                      </div>
+                      <!-- <h2></h2> -->
+                      <!-- Step 5: Add .orbit-container to <ul> -->
+                      <ul class="orbit-container">
+                        <!-- Step 5: Add .orbit-slide to each <li> -->
+                        <!-- Step 6: Add .is-active to the starting slide -->
+                        <li class="orbit-slide is-active">
+                          <!-- Step 3: Declare Orbit Images w/ .orbit-image -->
+                          <img src="http://placehold.it/1400x600" alt="Orbit Slide 1." class="orbit-image">
+                        </li>
+                        <!-- Step 5: Add .orbit-slide to each <li> -->
+                        <li class="orbit-slide">
+                          <figure class="orbit-figure">
+                            <img src="http://placehold.it/1400x600" alt="Orbit Slide 2." class="orbit-image">
+                            <!-- Step 4: Add .orbit-caption to figcaptions -->
+                            <figcaption class="orbit-caption">Caption test!</figcaption>
+                          </figure>
+                        </li>
+                        <!-- Step 5: Add .orbit-slide to each <li> -->
+                        <li class="orbit-slide">
+                          <figure class="orbit-figure">
+                            <img src="http://placehold.it/1400x600" alt="Orbit Slide 3." class="orbit-image">
+                            <!-- Step 4: Add .orbit-caption to figcaptions -->
+                            <figcaption class="orbit-caption">Woot!</figcaption>
+                          </figure>
+                        </li>
+                        <!-- <li class="orbit-slide"><img src="images/cake/cake4.jpg" alt="Wedding cake sample 4." class="orbit-image"></li> -->
+                      </ul>
+                    </div>
+                    <!-- Step 7: Add nav bullets -->
+                    <nav class="orbit-bullets">
+                      <!-- JS will move the current slide -->
+                      <button class="is-active" data-slide="0">
+                        <span class="show-for-sr">SR Text</span>
+                        <span class="show-for-sr">Current Slide</span>
+                      </button>
+                      <button data-slide="1">
+                        <span class="show-for-sr">SR Text.</span>
+                      </button>
+                      <button data-slide="2">
+                        <span class="show-for-sr">Sr last text</span>
+                      </button>
+                      <!-- <button data-slide="3"><span class="show-for-sr">Simple white cake with several kinds of flowers.</span></button> -->
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>            <p>There’s a lot to explore outside of class, including student organizations, free concerts, music ensembles, and
+              the diverse music and art scene of Minneapolis-St. Paul.</p>
+          </div>
+
+        </div>
+        <div class="tabs-panel" id="panel3">
+          <h2 class="text-center">Faculty</h2>
+          <div class="grid-x grid-padding-x grid-padding-y">
+            <div class="cell medium-4">
+              <img src="http://fillmurray.com/375/500" />
+            </div>
+            <div class="cell medium-8">
+              <h3>
+                <a href="#">Chopper Black</a>
+              </h3>
+              <p>From Paula Abdul to Yanni and Bobby Z, as well as hundreds of artist in between, John “Chopper” Black brings
+                over forty years of experience to McNally-Smith College of Music.</p>
+
+              <p>As a Musician, Producer and Audio Engineer, Chopper’s extensive knowledge in Recording Studios, Audio Recording,
+                Music Production, TV and Radio Advertising, Live Performance and Live Sound, inspires his passion in the
+                mentoring of students in the arts of Music Production and Recording.</p>
+
+              <p>He has worked with many of the major record labels such as Virgin, Capital, MCA, Motown, and Warner Brothers,
+                just to name a few. Chopper has multiple Gold and Platinum Records to his credits.</p>
+
+              <p>
+                <a href="#">Read less</a>
+              </p>
+            </div>
+          </div>
+          <div class="grid-x grid-padding-x grid-padding-y">
+            <div class="cell medium-4">
+              <img src="http://fillmurray.com/375/500" />
+            </div>
+            <div class="cell medium-8">
+              <h3>
+                <a href="#">Chopper Black</a>
+              </h3>
+              <p>From Paula Abdul to Yanni and Bobby Z, as well as hundreds of artist in between, John “Chopper” Black brings
+                over forty years of experience to McNally-Smith College of Music.</p>
+
+              <p>As a Musician, Producer and Audio Engineer, Chopper’s extensive knowledge in Recording Studios, Audio Recording,
+                Music Production, TV and Radio Advertising, Live Performance and Live Sound, inspires his passion in the
+                mentoring of students in the arts of Music Production and Recording.</p>
+
+              <p>He has worked with many of the major record labels such as Virgin, Capital, MCA, Motown, and Warner Brothers,
+                just to name a few. Chopper has multiple Gold and Platinum Records to his credits.</p>
+
+              <p>
+                <a href="#">Read less</a>
+              </p>
+            </div>
+          </div>
+          <div class="grid-x grid-padding-x grid-padding-y">
+            <div class="cell medium-4">
+              <img src="http://fillmurray.com/375/500" />
+            </div>
+            <div class="cell medium-8">
+              <h3>
+                <a href="#">Chopper Black</a>
+              </h3>
+              <p>From Paula Abdul to Yanni and Bobby Z, as well as hundreds of artist in between, John “Chopper” Black brings
+                over forty years of experience to McNally-Smith College of Music.</p>
+
+              <p>As a Musician, Producer and Audio Engineer, Chopper’s extensive knowledge in Recording Studios, Audio Recording,
+                Music Production, TV and Radio Advertising, Live Performance and Live Sound, inspires his passion in the
+                mentoring of students in the arts of Music Production and Recording.</p>
+
+              <p>He has worked with many of the major record labels such as Virgin, Capital, MCA, Motown, and Warner Brothers,
+                just to name a few. Chopper has multiple Gold and Platinum Records to his credits.</p>
+
+              <p>
+                <a href="#">Read less</a>
+              </p>
+            </div>
+          </div>
+          <div class="grid-x grid-padding-x grid-padding-y">
+            <div class="cell medium-4">
+              <img src="http://fillmurray.com/375/500" />
+            </div>
+            <div class="cell medium-8">
+              <h3>
+                <a href="#">Chopper Black</a>
+              </h3>
+              <p>From Paula Abdul to Yanni and Bobby Z, as well as hundreds of artist in between, John “Chopper” Black brings
+                over forty years of experience to McNally-Smith College of Music.</p>
+
+              <p>As a Musician, Producer and Audio Engineer, Chopper’s extensive knowledge in Recording Studios, Audio Recording,
+                Music Production, TV and Radio Advertising, Live Performance and Live Sound, inspires his passion in the
+                mentoring of students in the arts of Music Production and Recording.</p>
+
+              <p>He has worked with many of the major record labels such as Virgin, Capital, MCA, Motown, and Warner Brothers,
+                just to name a few. Chopper has multiple Gold and Platinum Records to his credits.</p>
+
+              <p>
+                <a href="#">Read less</a>
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="tabs-panel" id="panel4">
+          <h2 class="text-center">TOGETHER MSP</h2>
+          <p>Chop short loin t-bone andouille flank jerky corned beef turkey biltong alcatra cow cupim ham hock. Strip steak
+            shankle drumstick, ribeye chuck shank spare ribs biltong swine burgdoggen pastrami. Andouille ribeye venison,
+            tongue chicken hamburger sausage.</p>
+
+        </div>
+        <div class="tabs-panel" id="panel5">
+          <h2 class="text-center">Tuition & Aid</h2>
+          <h3>Tuition</h3>
+
+          <ul>
+            <li>$14,200 per semester for full-time attendance (12-16 credits)</li>
+            <li>$1090 per credit for part-time attendance</li>
+            <li>
+              <a href="#">More info »</a>
+            </li>
+          </ul>
+
+          <h3>Financial Aid</h3>
+          <ul>
+            <li>Over 95% of our students receive financial assistance annually in the form of merit-based scholarships and need-based
+              grants to help cover their educational costs.</li>
+            <li>
+              <a href="#">Click here</a> to learn about the many resources available to help pay for college.</li>
+          </ul>
+          <h3>Accreditation</h3>
+          <ul>
+            <li>McNally Smith College of Music is accredited by the National Association of Schools of Music (NASM).</li>
+            <li>
+              <a href="#">More info »</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+  </div>
+</div>
+</div>
+  <footer class="footer--ms">
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x">
+        <div class="cell medium-3">
+          <h3>About Us</h3>
+          <ul class="no-bullet">
+            <li>
+              <a href="#">Frequently Asked Questions</a>
+            </li>
+            <li>
+              <a href="#">News & Events</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+            <li>
+              <a href="#">Media</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#">Accreditation</a>
+            </li>
+            <li>
+              <a href="#">Employment Opportunities</a>
+            </li>
+          </ul>
+        </div>
+        <div class="cell medium-3">
+          <h3>Degrees & Programs</h3>
+          <ul class="no-bullet">
+            <li>
+              <a href="#">Music Production</a>
+            </li>
+            <li>
+              <a href="#">Music Business</a>
+            </li>
+            <li>
+              <a href="#">Songwriting</a>
+            </li>
+            <li>
+              <a href="#">Music Performance</a>
+            </li>
+            <li>
+              <a href="#">Live Sound</a>
+            </li>
+            <li>
+              <a href="#">Audio Engineering</a>
+            </li>
+            <li>
+              <a href="#">Composition</a>
+            </li>
+            <li>
+              <a href="#">View All</a>
+            </li>
+          </ul>
+        </div>
+        <div class="cell medium-3">
+          <h3>Community</h3>
+          <ul class="no-bullet">
+            <li>
+              <a href="#">Prospective Students</a>
+            </li>
+            <li>
+              <a href="#">Admissions</a>
+            </li>
+            <li>
+              <a href="#">Alumni</a>
+            </li>
+            <li>
+              <a href="#">Parents</a>
+            </li>
+            <li>
+              <a href="#">Faculty</a>
+            </li>
+            <li>
+              <a href="#">Portal</a>
+            </li>
+          </ul>
+        </div>
+        <div class="cell medium-3">
+          <h3>Connect with Us</h3>
+          <ul class="no-bullet list-social-links">
+            <li>
+              <a href="https://www.facebook.com/StudiaMusique/" target="_blank">
+                <i class="fa fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.twitter.com/wix" target="_blank">
+                <i class="fa fa-twitter-square"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCCUFlzDLGm_4XeMgWK7cSGQ" target="_blank">
+                <i class="fa fa-youtube-square"></i>
+              </a>
+            </li>
+          </ul>
+          <p class="subscribe">Subscribe to our Newsletter</p>
+        </div>
+        <div class="cell medium-12">
+          <p class="copy text-center">© 2017 Innovation Artist Laboratories. 609 10th St. S, Minneapolis, MN 55403 - 800.555.5555.</p>
+        </div>
+      </div>
+    </div>
+  </footer></body>
+
+<script src="../assets/js/app.js"></script>
+</body>
+
+</html>
