@@ -1,31 +1,77 @@
-<!-- Step 5: Add title bar -->
+{{!-- Step 5: Add title bar --}}
 <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
-    <!-- Step 6: Make toggle button -->
+    {{!-- Step 6: Make toggle button --}}
     <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
-    <!-- Step 7: Add Title -->
+    {{!-- Step 7: Add Title --}}
     <div class="title-bar-title">Menu</div>
 </div>
-<!-- Step 3: Wrapp menu in a .top-bar -->
+{{!-- Step 3: Wrapp menu in a .top-bar --}}
 <div class="top-bar">
-    <!-- Step 4: Give top-bar a direction -->
-    <!-- Step 8: add id to connect the toggle to this menu -->
+    {{!-- Step 4: Give top-bar a direction --}} {{!-- Step 8: add id to connect the toggle to this menu --}}
     <nav class="top-bar-left" id="responsive-menu">
-        <!-- Step 1: Add ,menu -->
-        <!-- Step 10: Add .dropdown and data-dropdown-menu to  -->
-        <!-- Step 11: Update classes to switch to different nav presentations -->
-        <!-- Step 12: Replace data-dropdown-menu with data-responsive-menu -->
+        {{!-- Step 1: Add ,menu --}} {{!-- Step 10: Add .dropdown and data-dropdown-menu to --}} {{!-- Step 11: Update classes to
+        switch to different nav presentations --}} {{!-- Step 12: Replace data-dropdown-menu with data-responsive-menu --}}
         <ul class="vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">
             <li class="menu-text">Studio</a>
             </li>
-            <!-- Step 2: Add .is-active -->
+            {{!-- Step 2: Add .is-active --}}
             <li>
                 <a class="is-active" href="{{root}}about">About</a>
             </li>
             <li class="has-submenu">
                 <a href="{{root}}services">Services</a>
-                <!-- Step 9: Put <ul> submenu in side the <li> to bind this w/ JS-->
-                <!-- Step 13: Add .vertical (an .nested) -->
-                <ul class="submenu menu vertical nested" data-submenu>
+                {{!-- Step 9: Put
+                <ul> submenu in side the
+                    <li> to bind this w/ JS Step 13: Add .vertical (an .nested) --}}
+                        <ul class="submenu menu vertical nested" data-submenu>
+                            <li>
+                                <a href="{{root}}services/photography">Photography</a>
+                            </li>
+                            <li>
+                                <a href="{{root}}services/recording">Recording</a>
+                            </li>
+                            <li>
+                                <a href="{{root}}services/videography">Videography</a>
+                            </li>
+                            <li>
+                                <a href="{{root}}services/events">Event Services</a>
+                            </li>
+                            <li>
+                                <a href="{{root}}services/career">Artistic Development</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="disable">Dev</a>
+                    </li>
+                    <li>
+                        <a href="{{root}}about-ms">About v2</a>
+                    </li>
+                    <li>
+                        <a href="{{root}}news">News</a>
+                    </li>
+                    <li>
+                        <a href="{{root}}program">Program</a>
+                    </li>
+                    <li>
+                        <a href="{{root}}contact">Contact</a>
+                    </li>
+                </ul>
+    </nav>
+</div>
+{{!--
+<div class="top-bar">
+    <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+            <li class="menu-text">Studio</a>
+            </li>
+            <li>
+                <a href="{{root}}about">About</a>
+            </li>
+            <li class="has-submenu">
+                <a href="{{root}}services">Services</a>
+                <ul class="submenu menu vertical" data-submenu>
                     <li>
                         <a href="{{root}}services/photography">Photography</a>
                     </li>
@@ -41,16 +87,6 @@
                     <li>
                         <a href="{{root}}services/career">Artistic Development</a>
                     </li>
-                    <li>Dev</li>
-                    <li>
-                        <a href="{{root}}about-ms">About v2</a>
-                    </li>
-                    <li>
-                        <a href="{{root}}news">News</a>
-                    </li>
-                    <li>
-                        <a href="{{root}}program">Program</a>
-                    </li>
                 </ul>
             </li>
             <li></li>
@@ -58,31 +94,15 @@
                 <a href="{{root}}contact">Contact</a>
             </li>
         </ul>
-    </nav>
-</div>
-<!-- <div class="top-bar">
-    <div class="top-bar-left">
-        <ul class="dropdown menu" data-dropdown-menu>
-        <li class="menu-text">Studio</a></li>
-        <li><a href="{{root}}about">About</a></li>
-        <li class="has-submenu">
-        <a href="{{root}}services">Services</a>
-            <ul class="submenu menu vertical" data-submenu>
-            <li><a href="{{root}}services/photography">Photography</a></li>
-            <li><a href="{{root}}services/recording">Recording</a></li>
-            <li><a href="{{root}}services/videography">Videography</a></li>
-            <li><a href="{{root}}services/events">Event Services</a></li>
-            <li><a href="{{root}}services/career">Artistic Development</a></li>
-            </ul>
-        </li>
-        <li></li>
-        <li><a href="{{root}}contact">Contact</a></li>
-        </ul>
     </div>
     <div class="top-bar-right">
         <ul class="menu">
-        <li><input type="search" placeholder="Search"></li>
-        <li><button type="button" class="button">Search</button></li>
+            <li>
+                <input type="search" placeholder="Search">
+            </li>
+            <li>
+                <button type="button" class="button">Search</button>
+            </li>
         </ul>
     </div>
-</div> -->
+</div> --}}
