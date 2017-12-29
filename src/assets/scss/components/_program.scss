@@ -1,11 +1,16 @@
 #program-header {
-  background-image: url("http://fillmurray.com/1600/800");
+  // background-image: url("http://fillmurray.com/1600/800");
+  background-image: url("/assets/img/studio-shot.jpg");
   background-size: cover;
   min-height: 40vh;
   // margin-bottom: 1rem;
 
   .cell {
-    transform: translateY(60%);
+    transform: translateY(50%);
+
+    // transform: translateY(71%);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 12px;
   }
 
   h1 {
